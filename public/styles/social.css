@@ -1,0 +1,56 @@
+.media_social {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+}
+
+.media_item {
+    margin: 1px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_item a {
+    color: #d3d3d3;
+    transition: 200ms linear;
+}
+
+
+.youtube:hover {
+    color: #c4302b;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    /* background: -webkit-linear-gradient(#eee, #333); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.spotify:hover {
+    color: #81b71a ; 
+}
+
+.soundcloud:hover {
+    color: #FE5000;
+}
+
+@media (max-width: 1028px){
+    .media_social {
+        display: none;
+    }
+}

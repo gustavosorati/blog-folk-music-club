@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+
+
+    <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="stylesheet" href="public/styles/top.css">
+    <link rel="stylesheet" href="public/styles/player.css">
+    <link rel="stylesheet" href="public/styles/content.css">
+    <link rel="stylesheet" href="public/styles/social.css">
+    <link rel="stylesheet" href="public/styles/contact.css">
+    <link rel="stylesheet" href="public/styles/map.css">
+    <link rel="stylesheet" href="public/styles/lyrics.css">
+
+    <title>The Three Bears</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- top -->
+        <div class="main">
+            <img class="active" src="public/media/images/landing.jpg" alt="">
+            <img src="public/media/images/jonh.jpg" alt="">
+            <img src="public/media/images/travis.jpg" alt="">
+        </div>
+
+        <!-- Menu -->
+        <div class="main_content" data-scroll="content">
+            <div class="main_band-center">
+                <div class="main_band">
+                    <div class="logo">Three<br />Bears Music</div>
+                    <!-- <span>Ultimo album</span> -->
+                </div>
+            </div>
+
+            <nav class="main_navigation">
+                <ul class="main_navigation_menu">
+                    <li><a href="#descubra">Descubra</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- content -->
+        <main class="content" id="content">
+            <!-- Player -->
+            <section class="player" id="descubra">
+                <div class="player_wrapper container">
+                    <!-- <h1 id="descubra">Descubra</h1> -->
+
+                    <!-- Lista de músicas -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Capa</th>
+                                <th>Música</th>
+                                <th>Album</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                    <!-- Player -->
+                    <div class="media-controls">
+                        <!-- Progress bar -->
+                        <!-- <div class="progress bg-success"></div> -->
+                        <input class="progress" type="range" name="" id="" min="0" value="0">
+
+                        <div class="playback-controls">
+                            <button id="previous" type="button" data-media="previus">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+
+                            <!-- <button id="backward" type="button" data-media="backward">
+                                <i class="fas fa-backward"></i>
+                            </button> -->
+
+                            <button id="playPause" type="button" data-media="playPause">
+                                <i class="fas fa-play fa-lg"></i>
+                            </button>
+
+                            <!-- <button id="forward" type="button" data-media="forward">
+                                <i class="fas fa-forward"></i>
+                            </button> -->
+
+                            <button id="next" type="button" data-media="next">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Agenda -->
+            <section class="projects_wrapper container">
+                <h1 id="agenda">Agenda</h1>
+                <span class="line"></span>
+
+                <div class="projects_shows">
+                    <div class="project_show">
+                        <h4>São Paulo - SP</h4>
+                        <p>Não há shows agendados no momento.</p>
+                    </div>
+
+                    <div class="project_show">
+                        <h4>Rio de Janeiro - São Paulo</h4>
+                        <p>Não há shows agendados no momento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact_wrapper container">
+                <div class="contact">
+                    <div class="contact_header">
+                        <h1>Contato</h1>
+                        <span class="line"></span>
+                    </div>
+
+                    <!-- formulairo -->
+                    <form class="contact_form" id="contato">
+                        <div class="contact_item">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name">
+                            <i class="far fa-check-circle"></i>
+                            <small>Error Message</small>
+                        </div>
+
+                        <div class="contact_item">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                            <i class="far fa-check-circle"></i>
+                            <small>Error Message</small>
+
+                        </div>
+
+                        <div class="contact_item">
+                            <label for="msg">Mensagem:</label>
+                            <textarea name="msg" id="msg"></textarea>
+                            <i class="far fa-check-circle"></i>
+                            <small>Error Message</small>
+
+                        </div>
+
+                        <button class="sendMessage">Enviar</button>
+                    </form>
+
+                    <div class="contact_info">
+                        <div class="contact_data">
+                            <div class="contact_data_header">
+                                <h2>Dados</h2>
+                                <span class="line"></span>
+                            </div>
+                            <span>- +55 16 99999-9999</span>
+                            <span>- contato@threebears.com</span>
+                            <span>- Avenida esquina primeira ao lado da segunda - São Paulo</span>
+                        </div>
+
+                        <div class="contact_media">
+                            <div class="contact_media_header">
+                                <h2>Redes Sociais</h2>
+                                <span class="line"></span>
+                            </div>
+
+                            <div class="contact_media_icons">
+                                <a href="#">
+                                    <i class="fa fa-spotify fa-2x spotify" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-soundcloud fa-2x soundcloud"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-youtube fa-2x youtube" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram fa-2x instagram"></i></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f fa-2x facebook"></i></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+                        <!-- MAP -->
+                        <div id="mapid"></div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <div class="media_social">
+
+            <div class="media_item">
+                <a href="#">
+                    <i class="fa fa-spotify fa-2x spotify" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="media_item">
+                <a href="#">
+                    <i class="fab fa-soundcloud fa-2x soundcloud" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="media_item">
+                <a href="#">
+                    <i class="fab fa-youtube fa-2x youtube" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="media_item">
+                <a href="#">
+                    <i class="fa fa-instagram fa-2x instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="media_item">
+                <a href="#">
+                    <i class="fa fa-facebook fa-2x facebook" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_wrapper container">
+                <div class="footer_marca">
+                    <div class="footer_section">
+                        <div class="footer_section_item">
+                            <div class="footer_section_header">
+                                <h2>Menu</h2>
+                            </div>
+                            <ul>
+                                <li><a href="#descubra">Descubra</a></li>
+                                <li><a href="#agenda">Agenda</a></li>
+                                <li><a href="#contato">Contato</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_section_item">
+                            <div class="footer_section_header">
+                                <h2>Lorem ipsum dolor</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officia aperiam, dolor autem ab veritatis, reprehenderit quidem esse id voluptate magnam vero! Facere quos magni eligendi? Optio rerum magnam quasi!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="developer">
+                <div class="developer_wrapper container">
+                    <p>Desenvolvido com &nbsp <i class="fas fa-heart"></i> &nbsp por Gustavo Sorati.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/7221aa3754.js" crossorigin="anonymous"></script>
+    <script type="module" src="public/scripts/script.js"></script>
+</body>
+
+</html>
