@@ -67,8 +67,8 @@
 
 .main_band .logo {
     font-family: 'East Sea Dokdo', cursive;
-    font-size: 15rem; 
-    letter-spacing: 6px;
+    font-size: 10rem; 
+    /* letter-spacing: 6px; */
     text-transform: uppercase;
     cursor: context-menu;
     color: lightgray;
