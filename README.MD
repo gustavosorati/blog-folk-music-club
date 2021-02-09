@@ -1,5 +1,5 @@
 <div align="center">
-    <img src=".github/background.gif">
+    <img src="public/media/images/background.gif">
 </div>
 
 <div align="center">
