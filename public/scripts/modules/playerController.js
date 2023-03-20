@@ -1,18 +1,13 @@
 export default function playerController() {
-  // elements for work with table
-  // audios é um objeto global do window que é criado atráves do arquivo data.js
-  // armazená a rota e as informações da música
   const tBody = document.querySelector('tbody');
   const audioFile = audios;
 
-  // elements for work with player
   const playPause = document.querySelector('[data-media="playPause"]');
   const btnNext = document.querySelector('[data-media="next"]');
   const btnPrevius = document.querySelector('[data-media="previus"]');
 
   const progressBar = document.querySelector('.progress');
 
-  // elements for work with audio
   let audioData = audios;
   let audio = new Audio();
   let audioDuration = 0;
@@ -20,9 +15,7 @@ export default function playerController() {
   let isPlaying = false;
   let currentAudio = 0;
 
-  // load and create table with audio informations
-  // irá criar a tabela com as informações obtidas de data.js
-  //
+
   function createTable() {
     audioFile.forEach((au, index) => {
       let tr = document.createElement('tr');
@@ -136,12 +129,10 @@ export default function playerController() {
 
   createTable();
 
-  // Events control actions in buttons
   playPause.addEventListener('click', resume);
   btnNext.addEventListener('click', next);
   btnPrevius.addEventListener('click', previus);
 
-  // Events what control transitions
   audio.addEventListener('timeupdate', () => {
     progressBar.value = audio.currentTime;
 

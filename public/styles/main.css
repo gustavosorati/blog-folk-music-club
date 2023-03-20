@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap');
-/* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Kufam', cursive; */
-/* font-family: 'Josefin Sans', sans-serif; */
+
 
 :root {
     --soft-yellow: #c5b45d;
@@ -42,11 +40,6 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
-    /* background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    overflow-X: hidden;
-    background-color: #eaeaea; */
 }
 
 .app {
@@ -76,16 +69,6 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
-
-
-/* footer {
-    position: relative;
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-} */
 
 @media (max-width: 1280px) {
     .wrapper {
@@ -187,7 +170,5 @@ body {
 
     .footer_section_item {
         margin-bottom: 30px;
-    }
-
-    
+    }    
 }
